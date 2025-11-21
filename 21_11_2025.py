@@ -74,6 +74,7 @@ for i in range(5):
 # Once loading is complete, display the final message
 placeholder.write("Data loading complete. Displaying business insights.")
 
+
 # Display dynamic business insights
 business_insights = [
     "Revenue increased by 15% in Q1 2024.",
