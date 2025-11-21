@@ -34,7 +34,7 @@ with tab2:
         "Quick delivery and excellent support."
     ]
     for idx,feedback in enumerate(customer_feedback):
-        st.write(f"{idx+1} {feedback}") #means bullet
+        st.write(f"{idx+1}. {feedback}") #means bullet
 with tab3:
     st.write("Content for Market Trends")
     market_trends =  {
