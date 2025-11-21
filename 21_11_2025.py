@@ -57,4 +57,8 @@ with tab4:
         st.header("Q3 2024")
         st.write("Revenue: $1.3M")
 
+with st.expander("More Information"):
+    st.write("Additional details on data collection methods.")
+    st.write("Data was collected through surveys and sales reports.")
+
     
