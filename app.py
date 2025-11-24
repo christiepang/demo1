@@ -1,5 +1,5 @@
 import streamlit as st
-import pandas as st
+import pandas as pd
 import os
 
 current_directory=os.getcwd()
