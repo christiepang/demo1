@@ -1,10 +1,11 @@
 import streamlit as st
-st.write("Hello")
+import pandas as st
+import os
 
-st.header("Header")
-st.write("Message")
+current_directory=os.getcwd()
+file_path = os.path.join(current_directory,"winequality-red.csv")
 
-st.number_input("Enter monthly Sales Target in (USD):",
-                min_value=0,
-                max_value=100000,
-                value=50000)
+df = pd.read_csv(file_path, delimiter=';')
+
+st.write("Wine Quality Data") 
+st.dataframe(df) #two D data, function and properties
