@@ -1,9 +1,8 @@
-# Step 1: Install Streamlit (run in terminal: pip install streamlit)
 
 # Step 2: Import Necessary Libraries
-import streamlit as st #st stands for streamli
-import numpy as np #np means numoy
-import pandas as pd # pd as pandas
+import streamlit as st
+import numpy as np
+import pandas as pd
 
 # Step 3: Generate Random Sales Data
 sales_data = np.random.rand(100) * 1000
@@ -17,7 +16,7 @@ df = pd.DataFrame({
     'Product': products,
     'Sales': sales,
     'Customers': customers
-})   #dataframe object: df, can come from csv  or dictionary
+})
 
 # Step 5: Visualize Sales Data
 
@@ -40,3 +39,5 @@ st.bar_chart(df[['Product', 'Sales']].set_index('Product'))
 # Scatter Chart - Customer Engagement by Product
 st.markdown("### Customer Engagement by Product")
 st.scatter_chart(df[['Product', 'Customers']].set_index('Product'))
+
+# Step 6: Run the Streamlit App (run in terminal: streamlit run app.py)
